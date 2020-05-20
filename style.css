@@ -40,8 +40,8 @@ a.list-group-item.list-group-item-action:hover {
         padding: 15px;
         border-top: 1px solid rgba(0,0,0,.125);
     }
-.masthead {
-  margin:50px;
-  padding: 50px:
+.masthead-subheading {
+  margin-top: 50px;
+}
 
 }
