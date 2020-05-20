@@ -16,7 +16,7 @@ footer {
     background-color: #F0F2EF;
     padding-top: 80px;
 }
-.background {
+.background-home{
     width: 100%;
     background-color: #F0F2EF;
 }
@@ -40,8 +40,9 @@ a.list-group-item.list-group-item-action:hover {
         padding: 15px;
         border-top: 1px solid rgba(0,0,0,.125);
     }
-.masthead-subheading {
-  margin-top: 50px;
+.header {
+  margin: 50 auto;
+
 }
 
 }
