@@ -14,31 +14,28 @@
     <!-- This is your navigation bar. See: https://getbootstrap.com/docs/4.0/components/navbar/-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-light">
         <div class="container">
-            <!-- Here is where you will add your name -->
+
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-lg-0">
-                    <!-- In each list item (li) is where your links go -->
-                    <li class="nav-item active">
-                        <!-- This is a link -->
-                        <a class="nav-link" href="index.html" disabled>Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- This is a link -->
-                        <a class="nav-link" href="work.html">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- This is a link -->
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+
+                    <li class="nav-item active"><a class="nav-link" href="#index.html" disabled>Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Nikki Brooks</div>
+                <div class="masthead-heading ">Full Stack Web Developer</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            </div>
+        </header>
 
     <section class="page-section" id="services">
     <div class="background-home">
@@ -46,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 mt-3">
                     <!-- <Header> tags are like <div> tags, but tell google what kind of content is inside. This is called Semantic HTML. Only 1 header tag per page. -->
-                    <header><h1>Welcome to My Portfolio!</h1></header>
+
                     <div id="aboutMe">
                         <!-- Heading tags, or <H#> tags, are not the same as <Header>. They go from H1-H6 in order of what is important on your page. Typically, you will have 1 <h1> tag on a page, and multiple h2-h6 tags depending on your content. -->
                         <h3>About Me</h3>
