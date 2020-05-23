@@ -4,13 +4,48 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+  background-image: url('../assets/images/theone1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
-.bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+
+
+
+#mainNavbar .nav-link { 
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 2.0rem;
+
 }
+#mainNavbar .nav-link:hover { 
+    color: black;
+    text-shadow: powderblue;
+
+}
+#header {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height: 25em;
+  
+  
+}
+
+
+.about {
+
+  height: 25em;
+}
+
+
+
+
+
+
