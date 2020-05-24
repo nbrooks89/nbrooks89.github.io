@@ -21,9 +21,9 @@
 </head>
 
 <body class = "container-fluid">
-  <nav id="mainNavbar" class="navbar  navbar-dark  navbar-expand-md  fixed-top py-0 bg">
-    <div class="container">
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"  aria-label="Toggle navigation">
+  <nav id="mainNavbar" class="navbar  navbar-dark  navbar-expand-sm  fixed-top py-0 bg">
+    <div class="container-fluidß">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"  aria-label="Toggle navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -47,7 +47,7 @@
 
 
  
-  <section id="header" class="container-fluid">
+  <section id="header" class="container-fluid ">
     
           <h1>NICOLE BROOKS</h1>
           <h2>Full STack Web Developer</h2>
@@ -99,17 +99,11 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
+  
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/cjs/popper.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-   $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-   }); 
-    
-  </script>
-
+  <script type="text/javascript" src="app.js"></script>
+  
 </body>
 
 </html>
