@@ -4,8 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 body {
+  height: 100%;
 
 }
+
 
 h1 {
   font-size:60px; 
@@ -31,23 +33,42 @@ h1 {
 
 .bg{
   background-color:transparent;
+  
 
 }
 .bg.scrolled{
-  background-color: orange 
+  background-color: rgb(0, 0, 0);
+  transition: background 400ms;
+  border-bottom-color:3px solid black;
 }
 
 
 #header {
+  
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #e73a1c, #c59c2b, #1383ac, #1b9c7e);
+	background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+  border-bottom: 3px solid black;
+}
+.button {
+  background-color:transparent;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13pt;
+  color: azure;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
 
+
+.flex {
   display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: column;
-  height: 25em;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    align-items: center;
+   flex-direction: column;
+    justify-content: center;
 }
 
 @keyframes gradient {
@@ -66,17 +87,23 @@ h1 {
 
 
 #about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#rowHeader{
-  display: flex;
-  justify-content: center;
+  min-height: 100vh;
+  border-bottom: 3px solid black;
   
 }
+
+#portfolio{
+  min-height: 100vh;
+  border-bottom: 3px solid black;
+}
+
+#contact{
+  min-height: 100vh;
+  border-bottom: 3px solid black;
+}
+
+
+
 
   
 
