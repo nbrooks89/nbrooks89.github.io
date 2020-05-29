@@ -89,6 +89,7 @@ h1 {
 
 
 
+
 #about {
   padding-top: 60px;
   padding-left: 15px;
@@ -99,10 +100,24 @@ h1 {
 }
 
 #aboutMe{
-  font-size:80px;
+  display:flex;
+  justify-content:center;
+  margin-top: 60px;
+  padding-top: 100px;
+  font-size:120px;
   color: rgb(14, 12, 11);
   text-decoration:underline ;
   text-decoration-color: rgb(37, 160, 197);
+}
+#portfolio{
+  margin-top: 60;
+  margin-bottom: 60px;
+}
+
+.boxcol{
+  display:flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .boxout{
@@ -116,7 +131,8 @@ h1 {
 
 
 p {
-  font-size: 22px;;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
 }
   
 
@@ -125,6 +141,7 @@ p {
 #portfolio{
   min-height: 100vh;
   border-bottom: 5px solid black;
+
   
 }
 
@@ -160,58 +177,37 @@ p {
 	justify-content: center;
 	width: 700px;
 }
-#Slideshow{
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	overflow: hidden;
-  position: relative;
-  height: 600px;
-}
 
-#Slider1{
-	border: 3px solid rgb(1, 3, 3);
-	height: 650px;
-	background-color: rgb(63, 175, 209);
-	width: 650px;
-}
-#Slider{
+
+
+
+.Slider{
+  margin-left: 300px;
 	border: 3px solid #1C1D21;
-	height: 500px;
+	height: 400px;
 	overflow: hidden;
-	width: 550px;
+  width: 600px;
+  margin-bottom: 15px;
 }
 
-#Slider img{
-	height: 500px;
-	width: 550px;
-	transition: all 1s;
+.Slider1{
+  
+	border: 3px solid #1C1D21;
+	height: 400px;
+	overflow: hidden;
+  width: 600px;
+  margin-bottom:15px;
 }
 
-#Arrows{
-	display: flex;
-	justify-content: space-between;
-	height: 40px;
-	position: absolute;
-	width: 550px;
+.Slider img{
+	height: 400px;
+	width: 600px;
+	
 }
 
-#Arrows i{
-	background-color: rgba(255, 255, 255, .25);
-	color: #1C1D21;
-	cursor: pointer;
-	height: 40px;
-	padding: 15px;
-
-	transition: background-color .5s, color .5s;
-}
-
-
-
-#Arrows i:hover{
-	background-color: rgba(28,29,33, .75);
-	color: #EEEFF7;
+.Slider1 img {
+  height: 425px;
+  	width: 625px;
 }
 
 h1{
@@ -273,14 +269,14 @@ h2{
 #contact .container form textarea {
   
 	width:800px;
-	height:80px;
+	height:110px;
 	padding:5px 10px;
 	font-size: 12px;
 	color:#999;
 	letter-spacing:1px;
 	background: #FFF;
-	border:2px solid #FFF;
-	margin-bottom:25px;
+	border:5px solid #FFF;
+	margin-bottom:30px;
   -webkit-transition:all .1s ease-in-out;
 	-moz-transition:all .1s ease-in-out;
 	-ms-transition:all .1s ease-in-out;
@@ -296,12 +292,12 @@ h2{
 	height:250px;}
 
 #contact .container form .submit {
-	width:92%;
+	width:100%;
 	padding:5px 10px;
 	font-size: 40px;
 	letter-spacing:1px;
 	background:#2c1e1e;
-	height:70px;
+	height:60px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	color:#FFF;
@@ -331,8 +327,8 @@ input {
 
 input,
 input::-webkit-input-placeholder {
-  font-size: 25px;
-  line-height: 2;
+  font-size: 32px;
+  line-height: 3;
 }
 
   textarea {
@@ -342,11 +338,15 @@ input::-webkit-input-placeholder {
   
   textarea,
   textarea::-webkit-input-placeholder {
-    font-size: 25px;
+    font-size: 32px;
     line-height: 2;
       
   }
     #contH1{
+      display:flex;
+       
+      
+      justify-content: center;
      margin-bottom: 130px;
       font-size:80px;
       color: rgb(14, 12, 11);
