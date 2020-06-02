@@ -16,28 +16,31 @@ h1 {
 
 
 
-
 #mainNavbar .nav-link { 
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
+ margin-top: 9px;
+ padding: 10px;
+  font-family: 'Tenali Ramakrishna', sans-serif;
   color: white;
   font-weight: 200;
-  font-size: 2.0rem;
+  font-size: 35px;
+  text-shadow: black 1px 3px;
 
 }
 #mainNavbar .nav-link:hover { 
     color: black;
-    text-shadow: powderblue;
+    text-shadow: rgb(231, 226, 226) 1px 3px;
+    
 
 }
 
 .bg{
-  background-color:transparent;
+  
+  background-color:rgb(80, 123, 139);
   
 
 }
 .bg.scrolled{
-  background: linear-gradient(-45deg, #49130a, #c59c2b, #1383ac, #1b9c7e);
+  background: rgb(80, 123, 139);
 	background-size: 500% 500%;
   animation: gradient 15s ease infinite;
   transition: background 400ms;
@@ -47,11 +50,18 @@ h1 {
 
 #header {
   
+  border: 5px solid black;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #e73a1c, #c59c2b, #1383ac, #1b9c7e);
-	background-size: 500% 500%;
-  animation: gradient 15s ease infinite;
-  border: 3px solid rgb(0, 0, 0);
+  background-image: url('../assets/images/ollie.jpg' );
+  background-position: center center;
+  background-size:  900px;;
+  background-repeat:no-repeat;
+ 
+  background-color: rgba(236, 225, 174, 0.973);
+  /* background: linear-gradient(-45deg, #e73a1c, #c59c2b, #1383ac, #1b9c7e); */
+	/* background-size: 500% 500%;
+  animation: gradient 15s ease infinite; */
+  /* border: 3px solid rgb(0, 0, 0); */
   
 }
 .button {
@@ -66,9 +76,18 @@ h1 {
   transition: all 0.5s;
 }
 
+.flex1{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ flex-direction: column;
 
-.flex {
-  display: flex;
+
+height: 650px;
+width: 600px;
+}
+  
+.flex{ display: flex;
     align-items: center;
    flex-direction: column;
     justify-content: center;
@@ -107,21 +126,96 @@ h1 {
   border-bottom: 3px solid rgb(3, 1, 3);
   
 }
+
+#skillsH1Div{
+  margin-top: 100px;
+}
+
+#skillsH1{
+  display:flex;
+  align-items: center;
+  color: rgb(14, 12, 11);
+  text-decoration:underline ;
+  text-decoration-color:rgb(37, 160, 197);
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 40px;
+  
+}
+
+.iconRow{
+  justify-content: center;
+}
+
+.flex-skills{
+  display:flex;
+  justify-content:center;
+  font-size:20px
+}
  
-#javascript{
-  height:100px;
-  width:100px;
+#iconSize{
+  height:60px;
+  width:60px;
+  
+}
+#iconSize1{
+  height:60px;
+  width:60px;
+}
+#iconSize2{
+  margin-left: 15px;
+  height:60px;
+  width:60px;
+}
+#iconSize3{
+  height:60px;
+  width:60px;
+}
+#iconSize4{
+  height:60px;
+  width:60px;
+}
+#iconSize5{
+  height:60px;
+  width:60px;
+}
+#iconSize6{
+  height:60px;
+  width:60px;
+}
+#HTML{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#CSS{
+  margin-right: 30px;
+}
+#JAVASCRIPT{
+  margin-left: 65px;
+}
+#REACT{
+  margin-right: 30px;
+}
+#RAILS{
+ 
+}
+#SQL{
+  margin-left: 8px;
+}
+#RUBY{
+  margin-left: 50px;
 }
 
 #aboutMe{
   display:flex;
   justify-content:center;
-  margin-top: 60px;
-  padding-top: 100px;
-  font-size:120px;
+  margin-top: 20px;
+  
+  font-size:80px;
   color: rgb(14, 12, 11);
   text-decoration:underline ;
   text-decoration-color: rgb(37, 160, 197);
+  font-family: 'Tenali Ramakrishna', sans-serif;
 }
 #portfolio{
   margin-top: 60;
@@ -145,8 +239,8 @@ h1 {
 
 
 p {
-  font-size: 35px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-family: 'Tenali Ramakrishna', sans-serif;
 }
   
 
@@ -166,14 +260,9 @@ p {
   font-size:80px;
   color: rgb(14, 12, 11);
   text-decoration:underline ;
-  text-decoration-color: rgb(219, 145, 7);
+  text-decoration-color: rgb(37, 160, 197);
 }
 
-.box{
-  height: 320px;
-  width: 320px;
-  background-color: rgb(209, 206, 208);
-}
 
 #contact{
   min-height: 100vh;
@@ -181,53 +270,47 @@ p {
 }
 
 
-
-
-#Wrapper{
-	align-items: center;
-	background-color: #EEEFF7;
-	display: flex;
-	height: 600px;
-	justify-content: center;
-	width: 700px;
-}
-
-.end{
- display: flex;
- justify-content: right;
-}
-
-
-
-
-.about-images-right{
-  
-  height:400px;
-  width:400px;
-  
-}
-
 .about-images-left{
-  height:400px;
-  width:400px;
-  
+  height:350px;
+  width: 480px;
+  border-radius: 5px;
+  border: 3px solid black;
 }
 
+#aboutDiv{
+  padding-right: 30px;
+}
+
+
+#arrow-box{
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 125px;
+  width: 100px;
+}
+
+#arrowButton{
+padding-top:20px ;
+  color: #1C1D21;
+  height: 70px;
+width: 70px;}
 
 
 
 h1{
+  font-family: 'M PLUS 1p', sans-serif;
+  margin-top:20px;
 	color: #1C1D21;
-	font-family: righteous;
 	font-size: 2.5em;
-	padding: 20px;
+	
 }
 
 h2{
 	color: #1C1D21;
 	font-family: "Open Sans";
 	font-size: 1.5em;
-	padding: 20px;
+	padding-bottom: 40px;
 }
 
 #MeLink{
