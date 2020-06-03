@@ -56,7 +56,7 @@ h1 {
   background-position: center center;
   background-size:  900px;;
   background-repeat:no-repeat;
-  background-color: rgba(236, 225, 174, 0.973);
+  background-color: rgba(204, 203, 197, 0.973);
 
 }
 .button {
@@ -225,7 +225,7 @@ width: 600px;
 .boxout{
   
   height:150px;
-  width: 350px;
+  width: 325px;
   border: 4px solid black;
   background-color: rgb(48, 55, 58);
   color: antiquewhite;
