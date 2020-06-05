@@ -8,57 +8,107 @@ body {
 
 }
 
-
-h1 {
-  font-size:60px; 
+.headH1{
+  margin: 0;
+  position: relative;
+  font-size: 74px;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5), 6px 2px 2px rgba(206,137,39,0.74);
+color: #333333;
 
 }
 
+.headH2{
+  position: relative;
+  font-size: 34px;
+  font-weight: bold ;
+  color: rgb(20, 19, 18);
+  text-shadow: rgb(65, 62, 62) 1px 2px;
+}
+.headH3{
+  margin: 0;
+  position: relative;
+  font-size: 80px;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5), 6px 2px 2px rgba(216,194,26,0.74);
+color: #333333;
+}
+
+.navbar-nav{
+  padding-bottom:15px ;
+}
 
 
 #mainNavbar .nav-link { 
- margin-top: 9px;
+  height:60px;
+ margin-top: 2px;
  padding: 10px;
   font-family: 'Tenali Ramakrishna', sans-serif;
-  color: white;
-  font-weight: 200;
-  font-size: 35px;
-  text-shadow: black 1px 3px;
+  color: rgb(202, 198, 198);
+  font-weight: bold;
+  font-size: 45px;
+  
 
 }
 #mainNavbar .nav-link:hover { 
-    color: black;
-    text-shadow: rgb(231, 226, 226) 1px 3px;
-    
+    color: rgba(29, 25, 18, 0.562);
+    text-shadow: rgb(17, 17, 17) 1px 3px;
+   
 
 }
 
 .bg{
   
-  background-color:rgb(80, 123, 139);
+  height: 60px;
+  background-color:rgba(33, 44, 42, 0.808);
+  
+}
+
   
 
-}
+
 .bg.scrolled{
-  background: rgb(80, 123, 139);
+  height: 60px;
+  background-color:rgb(51, 110, 112);
+  opacity: 1.0; 
+  
+  
+  
 	background-size: 500% 500%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 40s ease infinite;
   transition: background 400ms;
   border-bottom-color:3px solid black;
 }
 
 
-#header {
+.header {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  ;
   
-  border: 5px solid black;
-  min-height: 100vh;
-  background-image: url('../assets/images/ollie.jpg' );
-  background-position: center center;
-  background-size:  900px;;
-  background-repeat:no-repeat;
-  background-color: rgba(204, 203, 197, 0.973);
+}
+
+.header::before {    
+    content: "";
+    border: 5px solid black;
+    background: url('../assets/images/dog.jpg') center ;
+    background-size: cover;
+    position: absolute;
+    
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.55;
 
 }
+
+
+  
+ 
+    
+
+
+
 .button {
   background-color:transparent;
   border: 2px solid #fff;
@@ -72,14 +122,12 @@ h1 {
 }
 
 .flex1{
+ padding-top: 150px; 
  display: flex;
- align-items: center;
- justify-content: flex-end;
+ justify-content: center;
  flex-direction: column;
-
-
-height: 650px;
-width: 600px;
+height: 510px;
+width: 900px;
 }
   
 .flex{ display: flex;
@@ -222,19 +270,7 @@ width: 600px;
   margin-top: 30px;
 }
 
-.boxout{
-  
-  height:150px;
-  width: 325px;
-  border: 4px solid black;
-  background-color: rgb(48, 55, 58);
-  color: antiquewhite;
-  font-family: 'Tenali Ramakrishna', sans-serif;
-  font-weight: 20px;
-  font-size: 35px;
-  text-decoration: none;
-  
-}
+
 
 
 
@@ -258,7 +294,7 @@ p {
 #portfolio{
   min-height: 100vh;
   border-bottom: 5px solid black;
-
+  
   
 }
 
@@ -279,8 +315,55 @@ p {
 
 
 #contact{
+  display: flex;
+  align-items: center;
   min-height: 100vh;
-  border-bottom: 3px solid black;
+  text-align:center;
+  background: linear-gradient(rgba(57, 57, 58, 0.5),rgba(22, 22, 22, 0.5))
+}
+
+
+
+form{
+  
+  transition: all 4s ease-in-out;
+  
+}
+
+.form-control{
+  
+
+  width: 600px;
+  background: transparent;
+  border:none;
+  outline:none;
+  border-bottom: 1px solid rgb(6, 7, 7);
+  color: white;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+}
+
+
+input{
+  height: 50px;
+}
+
+form .submit{
+  background:rgb(37, 160, 197);
+  border-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover{
+  background-color: rgb(136, 208, 230);
+  cursor: pointer;
+
 }
 
 
@@ -305,6 +388,7 @@ p {
 }
 
 #arrowButton{
+  position: relative;
 padding-top:20px ;
   color: #1C1D21;
   height: 70px;
@@ -358,18 +442,46 @@ h2{
 }
 
 
+.hover-2 .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
 
+.hover-2-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s;
+}
 
+.hover-2-description {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  text-align: center;
+  z-index: 99;
+  transition: all 0.3s;
+}
 
+.hover-2:hover .hover-2-title {
+  transform: translateY(-1.5rem);
+}
 
+.hover-2:hover .hover-2-description {
+  bottom: 0.5rem;
+  opacity: 1;
+}
 
-
-
-  
-
-
-
-
-
-
-
+.hover-2:hover .hover-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+}
+.images1{
+  height:200px;
+  width: 300px;
+  border-radius: 5px;
+  border: 3px solid black;
+}
