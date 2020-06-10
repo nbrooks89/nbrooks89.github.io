@@ -43,6 +43,9 @@
             <a class="nav-link " href="#about">  about</a>
           </li>
           <li class="nav-item ">
+            <a class="nav-link " href="#skillsSection">  skills</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link " href="#portfolio">  portfolio</a>
           </li>
           <li class="nav-item ">
@@ -56,23 +59,20 @@
 <section  id="header" class= " container-fluid header flex " >
   <div class="container ">
     <div class="row">
-    <div class= "flex1">
-      <h1 class="headH1 ">Nicole </h1>
-      <h1 class="headH3">Brooks </h1>
-      <h2 class="headH2">Full Stack Web Developer</h2> 
-      <a  href="https://github.com/nbrooks89"><i id="gitfav" class="fab fa-github"></i> <i id="linkfav" class="fab fa-linkedin-in"></i> </a>
+      <div class= "flex1">
+        <h1 class="headH1 ">Nicole </h1>
+        <h1 class="headH3">Brooks </h1>
+        <h2 class="headH2">Full Stack Web Developer</h2> 
+        <a  href="https://github.com/nbrooks89"><i id="gitfav" class="fab fa-github"></i> <i id="linkfav" class="fab fa-linkedin-in"></i> </a>
+      </div>
     </div>
-  </div>
   </div> 
-
     <a href= "#about" ><i id="arrowButton" class="fas fa-chevron-circle-down "></i> </a>
-  </div>
-</div>
 </section>
-</section>
+
 
   <!-- ------------------ABOUT------------------------- -->
-<section  id="about" class="container-fluid">
+<section  id="about" class="container-fluid px-0 flex">
   <div class="container">
     <div  class= "row  " >
       <div class= " col-lg-5 boxcol ">
@@ -81,27 +81,24 @@
             I'm a web developer based in sunny San Diego 
         </p>
         <p id="p2">   
-            Hi there! My name is Nikki Brooks. I am a recent graduate of a full stack web development bootcamp,eager to gain real world experience. When im not coding i enjoy, skateboarding, hanging out at the beach, and Hanging with my dog Archie.
-         </p>
+            Hi there! My name is Nikki Brooks. I am a recent graduate of a full stack web development bootcamp, eager to gain real world experience. When im not coding i enjoy, skateboarding, hanging out at the beach, and Hanging with my dog Archie.
+        </p>
       </div>
-    <div id="aboutDiv" class= " col-lg-7 " >
+      <div id="aboutDiv" class= " col-lg-7 " >
         <img class ="about-images-left" src="assets/images/sunset.png">
       </div>
-      
     </div>
-     <div class="row  ">
-      <div class="picBorder" >
-      <div id="picBorder class="col mx-auto mt-10>
-        <img id="myImg" src="assets/images/me-archie.jpg" alt="Me and my dog archie" width="150" height="100"  >
-        <img id="myImg2" src="assets/images/me-skate.jpg" alt="My Second Project" width="150" height="100">
-        <img id="myImg3" src="assets/images/me-archi1.jpg" alt="My Second Project" width="150" height="100">
-     
-        <img id="myImg4" src="assets/images/nikki-pic.jpg" alt="My Second Project" width="150" height="100">
-        <img id="myImg5" src="assets/images/archiegold.jpg" alt="My Second Project" width="150" height="100">
-        <img id="myImg6" src="assets/images/archiegold.jpg" alt="My Second Project" width="150" height="100">
+    <div class="row  ">
+      <div class="picBorder col mx-auto py-3" >
+        <img id="myImg" src="assets/images/me-archie.jpg" alt="" width="150" height="100"  >
+        <img id="myImg2" src="assets/images/me-skate.jpg" alt="" width="150" height="100">
+        <img id="myImg3" src="assets/images/nikkicomp.jpg" alt="" width="150" height="100">
+        <img id="myImg4" src="assets/images/nikki-pic.jpg" alt="" width="150" height="100">
+        <img id="myImg5" src="assets/images/nikkiskate1.JPG" alt="" width="150" height="100">
+        <img id="myImg6" src="assets/images/archiegold.jpg" alt="" width="150" height="100">
       </div>
     </div>
-  </div>
+  
     <div id="myModal" class="modal">
      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
       <img class="modal-content" id="img01">
@@ -119,25 +116,25 @@
       <div id="caption"></div>
        </div>
     </div>
-  
+  </div> 
+</section>  
   <!-- SKILLLLLS----------------------------------------->
+<section  id="skillsSection" class="container-fluid">
   <div id="skills" class="flex">
     <h1 class="skillsH12">my skills</h1>
-    <div class = "row flex ">
+    <div>
       <div id="skillsH1Div"class = "col-m-12 ">
-        <h1 id=skillsH1>languages / frameworks</h1>
+       <div><span id=skillsH1>languages </span><span id="dark-span">/</span> <span id="fram" >frameworks </span></div>
       </div>
     </div> 
     <div class = "row iconRow mb-10" >
       <div id="RUBY">
         <p class="my-0 text-center">Ruby </p>
         <img id="iconSize4" src="assets/images/ruby123.png">
-        
       </div>
       <div id="RAILS">
         <p class="my-0 text-center">Rails </p>
         <img id="iconSize5" src="assets/images/rails1234.png">
-        
       </div>
       <div id="SQL">
         <p class="my-0 text-center">SQL</p>
@@ -146,9 +143,7 @@
       <div id="JAVASCRIPT">
         <p class="my-0 mx-auto">Javascript </p>
         <i id="iconSize2" class="fab fa-js"></i>
-        
-        </div>
-        
+      </div>
       <div id="REACT">
         <p class="my-0 text-center">React </p>
         <img id="iconSize3"  src="assets/images/react12345.png">
@@ -163,7 +158,7 @@
       </div>
     </div> 
   </div>
-</div>
+</section>
 <!-- PORTFOLIO----------------------------------------->
 <section id="portfolio" class= "my-0 container" >
   <div class="py-5">
@@ -175,7 +170,7 @@
       <div class="projInfoContainer">
         <h2 class="proTitle">Tic-Tac-Toe</h2>
         
-        <p class="projSpec">React / Javascript <br />More stuff about it, too</p>
+        <p class="projSpec">React / Javascript 
       </div>
       <img class = "images1" src="assets/images/tictactoe1.jpg" />
     </div>
@@ -184,7 +179,7 @@
     <div class=" col-lg-4 col-md-6  mb-2 projContainer">
       <div class="projInfoContainer">
         <h2 class="proTitle">Treasure Hunt</h2>
-        <p class="projSpec">React / CSS<br />More stuff about it, too</p>
+        <p class="projSpec">React / CSS</p>
       </div>
       <img class = "images1" src="assets/images/treasurehunt1.jpg" />
     </div>
@@ -193,7 +188,7 @@
     <div class="col-lg-4 col-md-6 mb-2 projContainer">
       <div class="projInfoContainer">
         <h2 class="proTitle">Magic 8 Ball</h2>
-        <p class="projSpec">Javascript/HTML/CSS<br />More stuff about it, too</p>
+        <p class="projSpec">Javascript/HTML/CSS</p>
       </div>
       <img class = "images1" src="assets/images/magic8ball.jpeg" />
     </div>
@@ -202,7 +197,7 @@
     <div class=" col-lg-4 col-md-6  mb-2 projContainer">
       <div class="projInfoContainer">
         <h2 class="proTitle">Pig Latin</h2>
-        <p class="projSpec">JavaScript/HTML/CSS<br />More stuff about it, too</p>
+        <p class="projSpec">JavaScript/HTML/CSS<br /></p>
       </div>
       <img class = "images1" src="assets/images/piglatin.png" />
     </div>
@@ -211,7 +206,7 @@
     <div class="col-lg-4 col-md-6 mb-2 projContainer">
       <div class="projInfoContainer">
         <h2 class="proTitle">Project Title</h2>
-        <p class="projSpec">Stuff about this project.<br />More stuff about it, too</p>
+        <p class="projSpec">Stuff about this project.</p>
       </div>
       <img  class = "images1" src="assets/images/magic8ball.jpeg" />
     </div>
@@ -220,29 +215,36 @@
     <div class="  col-lg-4 col-md-6  mb-2  projContainer">
       <div class="projInfoContainer">
         <h2 class="proTitle">Project Title</h2>
-        <p class="projSpec">Stuff about this project.<br />More stuff about it, too</p>
+        <p class="projSpec">Stuff about this project</p>
       </div>
       <img class = "images1" src="assets/images/magic8ball.jpeg" />
     </div>
   </div>
 </section>
-  <section id="contact"  class= "container-fluid ">
-    
-      <h1 id="contH1">Contact Me</h1>
-    
-    <div class="container flex">
-      <div class="contact-form">
-        <br>
-        <br>
-        <form id="contact-form"  method="post" action="contact-form-handler.php" >
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-            <br>
-            <input name="mail" type="text"  class="form-control" placeholder="Your Email" required>
-            <br>
-            <textarea name="message" class="form-control " placeholder="message" row="4"required></textarea><br>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-        </form>  
-      </div>
+<section id="contact"  class= "container-fluid ">
+  <h1 id="contH1">contact </h1>
+    <div class="container">
+      <div class="row move">
+        <div class=" col-lg-6 px-0 flex">
+          <div class="contact-form ">
+            <form action="http://formspree.io/you@email.com" id="contact-form"  method="post" >
+              <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+               <br>
+              <input name="_replyto" type="email"  class="form-control" placeholder="Your Email" required>
+              <br>
+              <textarea name="body" class="form-control " placeholder="message" row="4"required></textarea><br>
+              <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>  
+          </div>
+        </div>
+        <div class=" col-lg-6  flex">
+          <div class="contact-other">
+            <p class="p-contact"><span class="mr-5"><i class="fas fa-map-marker-alt"></i> </span> San Diego,Ca</p>
+            <p class="p-contact"> <span class="mr-5"><i class="fas fa-phone"></i> </span> (774)261-2814</p>
+            <p class="p-contact"><span class="mr-5"><i class="fas fa-envelope"></i> </span>nbrooks2389@gmail.com</p>
+          </div>
+        </div>
+      </div>  
     </div>
 </section>
 
