@@ -29,7 +29,7 @@
 </head>
 
 <body class ="container-fluid px-0" >
-  <nav id="mainNavbar" class= " navbar  navbar-light  navbar-expand-sm  fixed-top py-0 bg">
+  <nav id="mainNavbar" class= " navbar  navbar-dark  navbar-expand-sm  fixed-top py-0 bg">
     <div class="container-fluid ">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"  aria-label="Toggle navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,7 +75,7 @@
 <section  id="about" class="container-fluid px-0 flex">
   <div class="container">
     <div  class= "row  " >
-      <div class= " col-lg-5 boxcol ">
+      <div class= " col-lg-6 boxcol ">
         <h1 id="aboutMe" >about me</h1>
         <p >
             I'm a web developer based in sunny San Diego 
@@ -84,11 +84,11 @@
             Hi there! My name is Nikki Brooks. I am a recent graduate of a full stack web development bootcamp, eager to utilize my new skills. I am passionate about building amazing websites that influence and improve the lives of those around me.  When im not coding i enjoy, skateboarding, and hanging out at the beach with my dog Archie.
         </p>
       </div>
-      <div id="aboutDiv" class= " col-lg-7 " >
-        <img class ="about-images-left" src="assets/images/sunset.png">
+      <div id="aboutDiv" class= " col-lg-6 " >
+        <img class ="about-images-left " src="assets/images/sunset.png">
       </div>
     </div>
-    <div class="row  ">
+    <div class="row text-center ">
       <div class="picBorder col mx-auto py-3" >
         <img id="myImg" src="assets/images/me-archie.jpg" alt="" width="150" height="100"  >
         <img id="myImg2" src="assets/images/me-skate.jpg" alt="" width="150" height="100">
@@ -100,8 +100,10 @@
     </div>
   
     <div id="myModal" class="modal">
+      <div>
      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
       <img class="modal-content" id="img01">
+    </div>
       <img class="modal-content" id="img02">
       <img class="modal-content" id="img03">
       <img class="modal-content" id="img04">
@@ -119,10 +121,10 @@
   </div> 
 </section>  
   <!-- SKILLLLLS----------------------------------------->
-<section  id="skillsSection" class="container-fluid">
+<section  id="skillsSection" class="container-fluid flex">
   <div id="skills" class="flex">
     <h1 class="skillsH12">my skills</h1>
-    <div>
+    <div class="text-center" >
       <div id="skillsH1Div"class = "col-m-12 ">
        <div><span id=skillsH1>languages </span><span id="dark-span">/</span> <span id="fram" >frameworks </span></div>
       </div>
@@ -161,10 +163,10 @@
 </section>
 <!-- PORTFOLIO----------------------------------------->
 <section id="portfolio" class= "my-0 container" >
-  <div class="py-5">
-  <div id="portH1">projects</div>
+  
+    <div id="portH1">projects</div>
 
-<div class="row"> 
+<div class="row "> 
   
     <div class="col-lg-4 col-md-6 mb-2 projContainer">
       <div class="projInfoContainer">
@@ -223,8 +225,7 @@
 </section>
 <section id="contact"  class= "container-fluid ">
   <h1 id="contH1">contact </h1>
-    <div class="container">
-      <div class="row move">
+    <div class="row move">
         <div class=" col-lg-6 px-0 flex">
           <div class="contact-form ">
             <form action="http://formspree.io/nbrooks2389@gmail.com" id="contactform"  method="POST" >
@@ -237,15 +238,14 @@
             </form>
           </div>
         </div>
-        <div class=" col-lg-6  flex">
+        <div class=" col-lg-6  flex  ">
           <div class="contact-other">
             <p class="p-contact"><span class="mr-5"><i class="fas fa-map-marker-alt"></i> </span> San Diego,Ca</p>
             <p class="p-contact"> <span class="mr-5"><i class="fas fa-phone"></i> </span> (774)261-2814</p>
             <p class="p-contact"><span class="mr-5"><i class="fas fa-envelope"></i> </span>nbrooks2389@gmail.com</p>
           </div>
         </div>
-      </div>  
-    </div>
+    </div>  
 </section>
 
   <!-- Bootstrap core JavaScript -->
